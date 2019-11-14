@@ -4,10 +4,10 @@ appkey   = XXXXXXXX
 username = XXXXXXXX
 password = XXXXXXXX
 
-[STATUSCAKE]
-apiurl   = https://app.statuscake.com/API/Tests/
-apikey   = XXXXXXXX
-username = XXXXXXXX
+#[STATUSCAKE]
+#apiurl   = https://app.statuscake.com/API/Tests/
+#apikey   = XXXXXXXX
+#username = XXXXXXXX
 
 [ZABBIX]
 server   = zabbix.yourdomain.edu # your zabbix server
