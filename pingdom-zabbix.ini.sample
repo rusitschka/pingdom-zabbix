@@ -4,6 +4,11 @@ appkey   = XXXXXXXX
 username = XXXXXXXX
 password = XXXXXXXX
 
+[STATUSCAKE]
+apiurl   = https://app.statuscake.com/API/Tests/
+apikey   = XXXXXXXX
+username = XXXXXXXX
+
 [ZABBIX]
 server   = zabbix.yourdomain.edu # your zabbix server
 port     = 10051 # port the zabbix trapper listens on
@@ -11,3 +16,8 @@ host     = Pingdom # host to send the traps to
 key1     = pingdom.checks # discovery key
 key2     = pingdom.status # status key
 key3     = pingdom.resptime # response time key
+# alternatively for statuscake
+#host     = StatusCake # host to send the traps to
+#key1     = statuscake.checks # discovery key
+#key2     = statuscake.status # status key
+# no key3!
