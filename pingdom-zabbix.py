@@ -90,7 +90,7 @@ def zabbix_status(data):
             '-p', config.get('ZABBIX', 'port'),
             '-s', config.get('ZABBIX', 'host'),
             '-k', config.get('ZABBIX', 'key2') + '[' + str(check['name']) + ']',
-            '-o', json.dumps({ 'data': status })
+            '-o', str(status)
         ]
         zabbix_trapper(cmd_args)
 
@@ -105,7 +105,7 @@ def zabbix_resptime(data):
             '-p', config.get('ZABBIX', 'port'),
             '-s', config.get('ZABBIX', 'host'),
             '-k', config.get('ZABBIX', 'key3') + '[' + str(check['name']) + ']',
-            '-o', json.dumps({ 'data': str(check['resptime']) })
+            '-o', str(check['resptime'])
         ]
         zabbix_trapper(cmd_args)
 
